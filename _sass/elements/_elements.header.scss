@@ -1,0 +1,7 @@
+// Header styles
+// Woot!
+
+.masthead {
+  @include inuit-clearfix();
+  background-color: $color-brand;
+}

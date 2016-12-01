@@ -1,0 +1,97 @@
+<footer class="u-padding-top u-padding-bottom">
+  <div class="o-wrapper">
+    <div class="o-layout">
+      <div class="o-layout__item  u-1/4@tablet  u-1/4@desktop">
+        <header>
+          <h6>About Us</h6>
+        </header>
+        <nav>
+          <a href="/about-us">About Us</a>
+          <a href="/about-us/branches">Branches</a>
+          <a href="/about-us/delivery-and-export">Delivery & Export</a>
+          <a href="/site-visits-and-specification">Site visits</a>
+        </nav>
+      </div>
+      <div class="o-layout__item u-1/4@tablet u-1/4@desktop">
+        <header>
+          <h6>Contact Us</h6>
+        </header>
+        <nav>
+          <a href="">Contact Us</a>
+          <a href="">Social links</a>
+        </nav>
+      </div>
+      <div class="o-layout__item u-1/4@tablet u-1/4@desktop">
+        <header>
+          <h6>Guides and How to's</h6>
+        </header>
+        <nav>
+          <a href="">Links</a>
+          <a href="">Glossary</a>
+        </nav>
+      </div>
+      <div class="o-layout__item u-1/4@tablet u-1/4@desktop">
+        <header>
+          <h6>Policies</h6>
+        </header>
+        <nav>
+          <a href="/about-us/privacy-policy">Policies
+          <a href="/about-us/terms-and-conditions">Terms and Conditions</a>
+          <a href="/about-us/cookies">Cookie policy</a>
+          <a href="/about-us/terms-of-website-use">Terms of website use</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script id="loadcss">
+    (function (w) {
+      "use strict";
+      var loadCSS = function (href, before, media) {
+        var doc = w.document;
+        var ss = doc.createElement("link");
+        var ref;
+        if (before) {
+          ref = before;
+        }
+        else {
+          var refs = (doc.body || doc.getElementsByTagName("head")[ 0 ]).childNodes;
+          ref = refs[ refs.length - 1];
+        }
+
+        var sheets = doc.styleSheets;
+        ss.rel = "stylesheet";
+        ss.href = href;
+        ss.media = "only x";
+
+        ref.parentNode.insertBefore(ss, (before ? ref : ref.nextSibling));
+        var onloadcssdefined = function (cb) {
+          var resolvedHref = ss.href;
+          var i = sheets.length;
+          while (i--) {
+            if (sheets[ i ].href === resolvedHref) {
+              return cb();
+            }
+          }
+          setTimeout(function () {
+            onloadcssdefined(cb);
+          });
+        };
+        ss.onloadcssdefined = onloadcssdefined;
+        onloadcssdefined(function () {
+          ss.media = media || "all";
+        });
+        return ss;
+      };
+      // commonjs
+      if (typeof module !== "undefined") {
+        module.exports = loadCSS;
+      }
+      else {
+        w.loadCSS = loadCSS;
+      }
+    }(typeof global !== "undefined" ? global : this));
+    //loadCSS('/assets/css/20160613183751.styles.min.css', document.getElementById("loadcss"));
+    loadCSS('/css/main.css', document.getElementById("loadcss"));
+</script>

@@ -1,0 +1,54 @@
+
+<header class="masthead">
+  <nav class="utility-nav u-padding-top-tiny u-padding-bottom-tiny">
+    <div class="o-wrapper">
+      <a href="tel:01424 431733">
+        <svg class="icon">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        01424 431733
+      </a>
+      <div class="utility-nav__wrapper">
+        <a class="utility-nav__link" href="#">
+          <svg class="icon">
+            <use xlink:href="#icon-location2"></use>
+          </svg>
+          <span class="utility-nav__text">Branches
+        </a>
+        <a class="utility-nav__link" href="#">
+          <svg class="icon">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+          <span class="utility-nav__text">Trolley</span>
+        </a>
+        <a class="utility-nav__link" href="#">
+          <svg class="icon">
+            <use xlink:href="#icon-user"></use>
+          </svg>
+          <span class="utility-nav__text">Login / register</span>
+        </a>
+    </div>
+    </div>
+  </nav>
+  <div class="o-wrapper u-padding-top u-padding-bottom">
+    <a href="/" class="logo">
+      <img class="logo__image" src="/css/images/logo.svg" alt="Trade Paint Limited corporate logo" title="Trade Paints Homepage" />
+    </a>
+    <form>
+      <input type="text" />
+      <button>Search</button>
+    </form>
+  </div>
+</header>
+<nav class="main-nav u-margin-bottom" id="main-menu">
+  <div class="o-wrapper">
+    {% assign pages = site.pages | sort:"order" %}
+    {% for my_page in pages %}
+    {% if my_page.title %}
+    <a class="{{ my_page.anchor-class }}" href="{{ my_page.url | prepend: site.baseurl }}">
+      {{ my_page.title | escape }}
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</nav>

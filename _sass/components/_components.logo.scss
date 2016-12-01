@@ -1,0 +1,14 @@
+.logo {
+  display:block;
+}
+.logo__image {
+  height: 48px;
+
+  float:left;
+  @include inuit-clearfix();
+
+  @include mq($from: tablet) {
+    height: 72px;
+  }
+
+}

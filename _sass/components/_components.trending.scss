@@ -1,0 +1,120 @@
+.trending {
+
+  @include mq(desktop)
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 358px;
+  }
+
+  @include mq($until: tablet) {
+    display: none;
+  }
+}
+.trending__item {
+  @include inuit-font-size(10px);
+  display: block;
+  border-left: 10px solid;
+  border-color: $color-gray-light;
+  background: $color-white;
+  color: $color-gray-light;
+  position: relative;
+  &:hover:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 35%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid $color-brand;
+  }
+  &:hover {
+    color: $color-brand;
+    border-color: $color-brand;
+  }
+  @include mq(tablet) {
+    @include inuit-font-size(12px,1.5);
+    padding: $inuit-global-spacing-unit;
+    margin-bottom: $inuit-global-spacing-unit;
+  }
+  @include mq(desktop) {
+     @include inuit-font-size(16px);
+    padding: $inuit-global-spacing-unit;
+    // margin-bottom: $inuit-global-spacing-unit--small;
+    margin-bottom: 0;
+  }
+}
+.trending__item--active {
+  color: $color-brand;
+  border-color: $color-brand;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 35%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid $color-brand;
+  }
+}
+.slider {}
+.frame {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slides {
+  display: block;
+}
+
+.slide {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.slide__image--container {
+  position:relative;
+}
+
+.slide__image--caption {
+  position:absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  background-color: rgba(1,1,1,0.6);
+  color: $color-white;
+
+  @include inuit-font-size(12px);
+
+  @include mq(tablet) {
+    @include inuit-font-size(14px);
+  }
+
+  @include mq(desktop) {
+    @include inuit-font-size(16px);
+  }
+
+  white-space:normal;
+
+}
+.slides__next,
+.slides__prev {
+  position: absolute;
+  @include mq($from: tablet){
+    display:none;
+  }
+}
+.slides__prev {
+  top: 40%;
+  left: 0;
+}
+.slides__next {
+  top: 40%;
+  right: 0;
+}

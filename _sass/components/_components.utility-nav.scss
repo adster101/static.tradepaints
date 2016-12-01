@@ -1,0 +1,25 @@
+
+.utility-nav {
+
+  color: $color-white;
+  background-color: $color-blue-light;
+
+  .utility-nav__link {
+    padding: 0 $inuit-global-spacing-unit-small;
+  }
+  .utility-nav__link + .utility-nav__link {
+    border-left: 1px solid $color-white;
+  }
+  .utility-nav__text {
+    @include mq($until: tablet) {
+      @include inuit-hidden-visually();
+    }
+  }
+  .utility-nav__wrapper {
+    float: right;
+  }
+  a {
+    text-decoration: none;
+    color: $color-white;
+  }
+}

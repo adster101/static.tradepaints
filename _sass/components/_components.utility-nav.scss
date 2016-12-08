@@ -6,6 +6,13 @@
 
   .utility-nav__link {
     padding: 0 $inuit-global-spacing-unit-small;
+    opacity: 0.87;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+      text-decoration: none;
+    }
   }
   .utility-nav__link + .utility-nav__link {
     border-left: 1px solid $color-white;

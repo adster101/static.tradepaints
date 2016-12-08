@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 2
 title: Woodcare
 anchor-class: woodcare main-nav__link
 

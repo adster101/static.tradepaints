@@ -12,13 +12,16 @@
 .main-nav__link {
   display: inline-block;
   color: $color-white;
-  padding:8px 3px;
+  padding:12px;
   text-decoration:none;
-  @include mq($from: tablet) {
+  opacity: 0.87;
+  @include mq($until: tablet) {
     padding:8px 6px;
   }
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
+    opacity: 1;
     text-decoration: none;
     background-color: $color-blue-light;
   }

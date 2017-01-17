@@ -2,13 +2,19 @@
 <header class="masthead">
   <nav class="utility-nav u-padding-top-tiny u-padding-bottom-tiny">
     <div class="o-wrapper">
-      <a href="tel:01424 431733">
-        <svg class="icon">
-          <use xlink:href="#icon-phone"></use>
-        </svg>
-        01424 431733
-      </a>
       <div class="utility-nav__wrapper">
+        <a class="utility-nav__link" href="tel:01424 431733">
+          <svg class="icon">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          01424 431733
+        </a>
+        <a class="utility-nav__link" href="#">
+          <svg class="icon">
+            <use xlink:href="#icon-info"></use>
+          </svg>
+          <span class="utility-nav__text">About Us
+        </a>
         <a class="utility-nav__link" href="#">
           <svg class="icon">
             <use xlink:href="#icon-location2"></use>
@@ -34,10 +40,12 @@
     <a href="/" class="logo">
       <img class="logo__image" src="/css/images/logo.svg" alt="Trade Paint Limited corporate logo" title="Trade Paints Homepage" />
     </a>
-    <form>
-      <input type="text" />
-      <button>Search</button>
-    </form>
+    <div class="search-container u-margin-top-small">
+      <form>
+        <input type="text" class="u-padding-small" />
+        <button class="">Search</button>
+      </form>
+    </div>
   </div>
 </header>
 <nav class="main-nav u-margin-bottom" id="main-menu">

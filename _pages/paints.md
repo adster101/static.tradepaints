@@ -5,3 +5,9 @@ anchor-class: paints main-nav__link
 layout: default
 order: 1
 ---
+
+As the name would suggest, there isn't much in the world of paint we don't stock and/or know all about. We stock all major brands such as Dulux, Dulux Trade, Crown, Crown Trade, Leyland &amp; Johstones, as well as some lesser known paint manufacturers.
+
+We have 12 state of the art mixing machines throughout the company, meaning we can mix just about any finish (vinyl matt, satinwood, foor paints, enamel, etc) in just about any colour (see Services -&gt; Colour for a run down of what we can do regarding colour).
+
+For a full list of stocked brands with links to their manufacture site, click here. For a comprehensive list of stocked products, <a href="/images/files/trade.pdf" target="_blank">please click here</a> to download a trade price list.

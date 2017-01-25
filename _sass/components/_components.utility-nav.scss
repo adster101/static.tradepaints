@@ -1,12 +1,39 @@
-
 .utility-nav {
 
   color: $color-white;
-  background-color: $color-blue-light;
+  background-color: $color-blue-dark;
+
+
+  .utility-nav__wrapper {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include mq($from: desktop) {
+      float: right;
+      display:inherit;
+    }
+  }
 
   .utility-nav__link {
-    padding: 0 $inuit-global-spacing-unit-small;
+
+    flex-grow: 2;
+    text-align: center;
     opacity: 0.87;
+
+    @include mq($until: tablet) {
+      @include inuit-font-size(12px);
+    }
+
+    // Make this a flex container
+    @include mq($from: desktop) {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: $inuit-global-spacing-unit;
+    }
+
 
     &:hover,
     &:active {
@@ -14,17 +41,24 @@
       text-decoration: none;
     }
   }
+
   .utility-nav__link + .utility-nav__link {
     border-left: 1px solid $color-white;
-  }
-  .utility-nav__text {
-    @include mq($until: tablet) {
-      @include inuit-hidden-visually();
+
+    @include mq($from: desktop) {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: $inuit-global-spacing-unit;
+      padding-right: $inuit-global-spacing-unit;
     }
+
+
   }
-  .utility-nav__wrapper {
-    float: right;
+
+  .utility-nav__text {
   }
+
+
   a {
     text-decoration: none;
     color: $color-white;

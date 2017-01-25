@@ -1,38 +1,16 @@
 
-<header class="masthead">
+<header class="masthead u-margin-bottom">
   <nav class="utility-nav u-padding-top-tiny u-padding-bottom-tiny">
     <div class="o-wrapper">
       <div class="utility-nav__wrapper">
         <a class="utility-nav__link" href="tel:01424 431733">
           <svg class="icon">
             <use xlink:href="#icon-phone"></use>
-          </svg>
-          01424 431733
-        </a>
-        <a class="utility-nav__link" href="#">
-          <svg class="icon">
-            <use xlink:href="#icon-info"></use>
-          </svg>
-          <span class="utility-nav__text">About Us
-        </a>
-        <a class="utility-nav__link" href="#">
+          </svg><span class="utility-nav__text">01424 431733</span></a><a class="utility-nav__link" href="#"><svg class="icon"><use xlink:href="#icon-info"></use>
+          </svg><span class="utility-nav__text">About</a><a class="utility-nav__link" href="#">
           <svg class="icon">
             <use xlink:href="#icon-location2"></use>
-          </svg>
-          <span class="utility-nav__text">Branches
-        </a>
-        <a class="utility-nav__link" href="#">
-          <svg class="icon">
-            <use xlink:href="#icon-cart"></use>
-          </svg>
-          <span class="utility-nav__text">Trolley</span>
-        </a>
-        <a class="utility-nav__link" href="#">
-          <svg class="icon">
-            <use xlink:href="#icon-user"></use>
-          </svg>
-          <span class="utility-nav__text">Login / register</span>
-        </a>
+          </svg><span class="utility-nav__text">Branches</a>
     </div>
     </div>
   </nav>
@@ -42,21 +20,38 @@
     </a>
     <div class="search-container u-margin-top-small">
       <form>
-        <input type="text" class="u-padding-small" />
-        <button class="">Search</button>
+        <input type="text" class="u-padding-tiny" />
+        <button class="c-btn c-btn--primary">Search</button>
       </form>
+
+      <a class="" href="#">
+        <svg class="icon icon--large">
+          <use xlink:href="#icon-cart"></use>
+        </svg>
+        <br />
+        <span class="utility-nav__text">Trolley</span>
+      </a>
+      <a class="utility-nav__link" href="#">
+        <svg class="icon icon--large">
+          <use xlink:href="#icon-user"></use>
+        </svg>
+        <br />
+        <span class="utility-nav__text">Login / register</span>
+      </a>
     </div>
+
+
   </div>
+  <nav class="main-nav" id="main-menu">
+    <div class="o-wrapper">
+      {% assign pages = site.pages | sort:"order" %}
+      {% for my_page in pages %}
+      {% if my_page.title %}
+      <a class="{{ my_page.anchor-class }}" href="{{ my_page.url | prepend: site.baseurl }}">
+        {{ my_page.title | escape }}
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
 </header>
-<nav class="main-nav u-margin-bottom" id="main-menu">
-  <div class="o-wrapper">
-    {% assign pages = site.pages | sort:"order" %}
-    {% for my_page in pages %}
-    {% if my_page.title %}
-    <a class="{{ my_page.anchor-class }}" href="{{ my_page.url | prepend: site.baseurl }}">
-      {{ my_page.title | escape }}
-    </a>
-    {% endif %}
-    {% endfor %}
-  </div>
-</nav>

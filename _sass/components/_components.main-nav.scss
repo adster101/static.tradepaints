@@ -1,8 +1,10 @@
 .main-nav {
 
-  background-color: $color-blue-dark;
+  display:none;
 
-  @include mq(desktop, wide) {
+  background-color: $color-blue-light;
+
+  @include mq($from: tablet) {
     display:block;
     margin-top: 0;
   }

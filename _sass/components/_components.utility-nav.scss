@@ -1,19 +1,13 @@
+
 .utility-nav {
 
   color: $color-white;
-  background-color: $color-blue-dark;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-
-  .utility-nav__wrapper {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    @include mq($from: desktop) {
-      float: right;
-      display:inherit;
-    }
+  @include mq($from: desktop) {
+    align-items: right;
   }
 
   .utility-nav__link {
@@ -21,10 +15,12 @@
     flex-grow: 2;
     text-align: center;
     opacity: 0.87;
+    font-weight: 700;
 
     @include mq($until: tablet) {
-      @include inuit-font-size(12px);
+      @include inuit-font-size(12px,1);
     }
+
 
     // Make this a flex container
     @include mq($from: desktop) {
@@ -34,7 +30,6 @@
       padding-right: $inuit-global-spacing-unit;
     }
 
-
     &:hover,
     &:active {
       opacity: 1;
@@ -43,7 +38,7 @@
   }
 
   .utility-nav__link + .utility-nav__link {
-    border-left: 1px solid $color-white;
+    //border-left: 1px solid $color-white;
 
     @include mq($from: desktop) {
       padding-top: 0;
@@ -51,16 +46,26 @@
       padding-left: $inuit-global-spacing-unit;
       padding-right: $inuit-global-spacing-unit;
     }
-
-
   }
 
   .utility-nav__text {
   }
 
+  .utility-nav__text--large {
+
+  }
 
   a {
     text-decoration: none;
     color: $color-white;
+  }
+}
+
+.utility-nav--logo {
+  .utility-nav__link {
+
+    @include mq($until: tablet) {
+      @include inuit-font-size(16px);
+    }
   }
 }

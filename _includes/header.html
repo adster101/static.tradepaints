@@ -1,47 +1,67 @@
 
 <header class="masthead u-margin-bottom">
-  <nav class="utility-nav u-padding-top-tiny u-padding-bottom-tiny">
-    <div class="o-wrapper">
-      <div class="utility-nav__wrapper">
+  <nav class="u-padding-top-tiny u-padding-bottom-tiny dark-blue-bg">
+    <div class="o-wrapper utility-nav">
         <a class="utility-nav__link" href="tel:01424 431733">
-          <svg class="icon">
+          <svg class="icon utility-nav__icon">
             <use xlink:href="#icon-phone"></use>
-          </svg><span class="utility-nav__text">01424 431733</span></a><a class="utility-nav__link" href="#"><svg class="icon"><use xlink:href="#icon-info"></use>
-          </svg><span class="utility-nav__text">About</a><a class="utility-nav__link" href="#">
-          <svg class="icon">
+          </svg>
+          <br />
+          <span class="utility-nav__text">01424 431733</span>
+        </a>
+        <a class="utility-nav__link" href="#">
+          <svg class="icon utility-nav__icon">
+            <use xlink:href="#icon-info"></use>
+          </svg>
+          <br />
+          <span class="utility-nav__text">About
+        </a>
+        <a class="utility-nav__link" href="#">
+          <svg class="icon utility-nav__icon">
             <use xlink:href="#icon-location2"></use>
-          </svg><span class="utility-nav__text">Branches</a>
-    </div>
+          </svg>
+          <br />
+          <span class="utility-nav__text">Branches</span>
+        </a>
+        <a class="utility-nav__link" href="#">
+          <svg class="icon utility-nav__icon">
+            <use xlink:href="#icon-user"></use>
+          </svg>
+          <br />
+          <span class="utility-nav__text">Login</span>
+        </a>
     </div>
   </nav>
   <div class="o-wrapper u-padding-top u-padding-bottom">
-    <a href="/" class="logo">
-      <img class="logo__image" src="/css/images/logo.svg" alt="Trade Paint Limited corporate logo" title="Trade Paints Homepage" />
+    <div class="utility-nav utility-nav--logo">
+      <a href="/" class="logo">
+        <img class="logo__image" src="/css/images/logo.svg" alt="Trade Paint Limited corporate logo" title="Trade Paints Homepage" />
+      </a>
+    <!-- <a class="utility-nav__link" href="#">
+      <svg class="icon icon--large">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+      <br />
+      <span class="">Shop</span>
+    </a> -->
+    <a class="utility-nav__link" href="#">
+      <svg class="icon utility-nav__icon--large">
+        <use xlink:href="#icon-search"></use>
+      </svg>
+      <br />
+      <span class="">Search</span>
     </a>
-    <div class="search-container u-margin-top-small">
-      <form>
-        <input type="text" class="u-padding-tiny" />
-        <button class="c-btn c-btn--primary">Search</button>
-      </form>
-
-      <a class="" href="#">
-        <svg class="icon icon--large">
-          <use xlink:href="#icon-cart"></use>
-        </svg>
-        <br />
-        <span class="utility-nav__text">Trolley</span>
-      </a>
-      <a class="utility-nav__link" href="#">
-        <svg class="icon icon--large">
-          <use xlink:href="#icon-user"></use>
-        </svg>
-        <br />
-        <span class="utility-nav__text">Login / register</span>
-      </a>
-    </div>
-
+    <a class="utility-nav__link" href="#">
+      <svg class="icon utility-nav__icon--large">
+        <use xlink:href="#icon-cart"></use>
+      </svg>
+      <br />
+      <span class="">Trolley</span>
+    </a>
+  </div>
 
   </div>
+
   <nav class="light-blue-bg" id="main-menu">
     <div class="o-wrapper main-nav">
       {% assign pages = site.pages | sort:"order" %}

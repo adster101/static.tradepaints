@@ -4,22 +4,19 @@
  */
 .icon {
   display: inline-block;
-  width: 12px;
-  height: 12px;
   fill: $color-white;
   vertical-align: middle;
-  margin-right: $inuit-global-spacing-unit-tiny;
-
-  @include mq($from: tablet) {
-    width: 16px;
-    height: 16px;
-  }
-
+  width: 16px;
+  height: 16px;
 }
 
-.icon--large {
-  width: 36px;
-  height: 36px;
-  fill: $color-black;
+.utility-nav__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.utility-nav__icon--large {
+  width: 24px;
+  height: 24px;
 
 }

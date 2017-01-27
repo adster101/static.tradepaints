@@ -1,13 +1,17 @@
 .logo {
-  display:block;
 }
+
 .logo__image {
+
   height: 48px;
 
-  float:left;
   @include inuit-clearfix();
 
-  @include mq($from: tablet) {
+  @include mq(tablet) {
+    height: 48px;
+  }
+
+  @include mq($from: desktop) {
     height: 72px;
   }
 

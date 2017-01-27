@@ -37,3 +37,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - bower_components
+compress_html:
+  clippings: all
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: true
+  startings: []

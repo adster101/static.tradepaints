@@ -35,7 +35,7 @@
           <h6>Policies</h6>
         </header>
         <nav>
-          <a href="/about-us/privacy-policy">Policies
+          <a href="/about-us/privacy-policy">Policies</a>
           <a href="/about-us/terms-and-conditions">Terms and Conditions</a>
           <a href="/about-us/cookies">Cookie policy</a>
           <a href="/about-us/terms-of-website-use">Terms of website use</a>
@@ -91,7 +91,7 @@
         });
         return ss;
       };
-      // commonjs
+
       if (typeof module !== "undefined") {
         module.exports = loadCSS;
       }
@@ -99,6 +99,6 @@
         w.loadCSS = loadCSS;
       }
     }(typeof global !== "undefined" ? global : this));
-    //loadCSS('/assets/css/20160613183751.styles.min.css', document.getElementById("loadcss"));
-    loadCSS('css/main.css', document.getElementById("loadcss"));
+    /*loadCSS('/assets/css/20160613183751.styles.min.css', document.getElementById("loadcss"));*/
+    loadCSS('css/main.css',document.getElementById("loadcss"));
 </script>

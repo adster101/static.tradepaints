@@ -44,5 +44,5 @@ compress_html:
   ignore:
     envs: []
   blanklines: false
-  profile: true
+  profile: false
   startings: []

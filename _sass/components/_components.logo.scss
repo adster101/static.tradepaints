@@ -1,10 +1,10 @@
 .logo {
+  flex-grow: 3;
 }
 
 .logo__image {
 
   height: 48px;
-
   @include inuit-clearfix();
 
   @include mq(tablet) {

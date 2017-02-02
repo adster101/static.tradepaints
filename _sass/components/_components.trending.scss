@@ -90,6 +90,10 @@
   background-color: rgba(1,1,1,0.6);
   color: $color-white;
 
+  > p {
+    margin-bottom: 0;
+  }
+  
   @include inuit-font-size(12px);
 
   @include mq(tablet) {

@@ -6,13 +6,14 @@
   flex-direction: row;
   align-items: center;
 
-  @include mq($from: desktop) {
+  @include mq($from: tablet) {
     align-items: right;
+    justify-content: flex-end;
   }
 
   .utility-nav__link {
 
-    flex-grow: 2;
+    flex-grow: 1;
     text-align: center;
     opacity: 0.87;
     font-weight: 700;
@@ -21,13 +22,10 @@
       @include inuit-font-size(12px,1);
     }
 
+    // Alter the utility nav link display for tablets and up
+    @include mq($from: tablet) {
 
-    // Make this a flex container
-    @include mq($from: desktop) {
-      padding-top: 0;
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: $inuit-global-spacing-unit;
+      flex-grow: 0;
     }
 
     &:hover,
@@ -40,11 +38,10 @@
   .utility-nav__link + .utility-nav__link {
     //border-left: 1px solid $color-white;
 
-    @include mq($from: desktop) {
+    @include mq($from: tablet) {
       padding-top: 0;
       padding-bottom: 0;
       padding-left: $inuit-global-spacing-unit;
-      padding-right: $inuit-global-spacing-unit;
     }
   }
 

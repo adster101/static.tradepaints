@@ -1,10 +1,12 @@
 .logo {
-  flex-grow: 3;
+  @include mq($from: tablet) {
+    flex-grow: 0;
+  }
 }
 
 .logo__image {
 
-  height: 48px;
+  height: 36px;
   @include inuit-clearfix();
 
   @include mq(tablet) {

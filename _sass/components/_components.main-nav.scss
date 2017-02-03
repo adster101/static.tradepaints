@@ -1,25 +1,32 @@
 .main-nav {
-  display:flex;
-  flex-shrink: 0;
-  height: 48px;
-  width:100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+
+  display:none;
+
+  @include mq($from: tablet) {
+    display:flex;
+    flex-shrink: 0;
+    height: 48px;
+    width:100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
 }
 
 .main-nav__link {
   display: flex;
   color: $color-white;
-  padding:12px;
+  padding:12px 12px 9px 12px;
   text-decoration:none;
   opacity: 0.87;
   height:48px;
   flex-shrink: 0;
+  border-bottom: solid 3px transparent;
 
   &:hover,
   &:active {
     opacity: 1;
     text-decoration: none;
-    background-color: $color-blue-light;
+    color: $color-yellow;
+    border-bottom: solid 3px $color-yellow;
   }
 }

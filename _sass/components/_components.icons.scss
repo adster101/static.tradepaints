@@ -11,19 +11,20 @@
 }
 
 .utility-nav__icon {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
 
-  @include mq($until: tablet) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  @include mq($from: tablet) {
+    width: 16px;
+    height: 16px;
   }
-
 }
 
 .utility-nav__icon--large {
-  width: 24px;
-  height: 24px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18px;
+  height: 18px;
 
 }

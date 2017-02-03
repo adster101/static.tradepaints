@@ -2,60 +2,74 @@
 <header class="masthead u-margin-bottom">
   <nav class="u-padding-top-tiny u-padding-bottom-tiny dark-blue-bg">
     <div class="o-wrapper utility-nav">
-        <a class="utility-nav__link" href="tel:01424 431733">
+        <a class="utility-nav__link utility-nav__link--tel" href="tel:01424 431733">
           <svg class="icon utility-nav__icon">
             <use xlink:href="#icon-phone"></use>
           </svg>
         <span class="utility-nav__text">01424 431733</span>
         </a>
-        <a class="utility-nav__link" href="#">
+        <a class="utility-nav__link utility-nav__link--hide-mobile" href="#">
           <svg class="icon utility-nav__icon">
             <use xlink:href="#icon-info"></use>
           </svg>
           <span class="utility-nav__text">About
         </a>
-        <a class="utility-nav__link" href="#">
+        <a class="utility-nav__link utility-nav__link--hide-mobile" href="#">
           <svg class="icon utility-nav__icon">
             <use xlink:href="#icon-location2"></use>
           </svg>
           <span class="utility-nav__text">Branches</span>
         </a>
-        <a class="utility-nav__link" href="#">
+        <a class="utility-nav__link utility-nav__link--login" href="#">
           <svg class="icon utility-nav__icon">
             <use xlink:href="#icon-user"></use>
           </svg>
-          <span class="utility-nav__text">Login</span>
+          <span class="utility-nav__text">Login / register</span>
         </a>
     </div>
   </nav>
-  <div class="o-wrapper u-padding-top u-padding-bottom">
+  <div class="o-wrapper">
     <div class="utility-nav utility-nav--logo">
       <a href="/" class="logo">
-        <img class="logo__image" src="/css/images/logo.svg" alt="Trade Paint Limited corporate logo" title="Trade Paints Homepage" />
+        <img class="logo__image" src="/css/images/logo.svg" alt="Trade Paint Limited logo" title="Go to homepage" />
       </a>
-    <!-- <a class="utility-nav__link" href="#">
-      <svg class="icon icon--large">
-        <use xlink:href="#icon-menu"></use>
-      </svg>
-      <br />
-      <span class="">Shop</span>
-    </a> -->
-    <a class="utility-nav__link" href="#">
-      <svg class="icon utility-nav__icon--large">
-        <use xlink:href="#icon-search"></use>
-      </svg>
-      <br />
-      <span class="">Search</span>
-    </a>
-    <a class="utility-nav__link" href="#">
-      <svg class="icon utility-nav__icon--large">
-        <use xlink:href="#icon-cart"></use>
-      </svg>
-      <br />
-      <span class="">Trolley</span>
-    </a>
-  </div>
+      <form style="flex-grow: 1" class="u-padding-left-large utility-nav__link--hide-mobile">
+        <input class="u-4/5 u-padding-small" type="text" value="" placeholder="Search the site"/>
+        <button class="c-btn">
+          <svg class="icon">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+          <span class="">Search</span>
+        </button>
 
+
+      </form>
+      <a class="utility-nav__link utility-nav__link--hide-tablet-up" href="#">
+        <svg class="icon utility-nav__icon--large">
+          <use xlink:href="#icon-menu"></use>
+        </svg>
+        <span class="">Menu</span>
+      </a>
+      <a class="utility-nav__link utility-nav__link--hide-tablet-up" href="#">
+        <svg class="icon utility-nav__icon--large">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+        <span class="">Search</span>
+      </a>
+      <a class="utility-nav__link utility-nav__link--hide-tablet-up" href="#">
+        <svg class="icon utility-nav__icon--large">
+          <use xlink:href="#icon-location2"></use>
+        </svg>
+        <span class="">Branches</span>
+      </a>
+      <a class="utility-nav__link utility-nav__link--trolley" href="#">
+        <svg class="icon utility-nav__icon--large">
+          <use xlink:href="#icon-cart"></use>
+        </svg>
+        <span class="utility-nav__trolley-total">0</span>
+        <span class="">Trolley</span>
+      </a>
+    </div>
   </div>
 
   <nav class="light-blue-bg" id="main-menu">

@@ -1,5 +1,4 @@
 .o-block--news {
-  box-shadow: 2px 2px 2px $color-gray-light;
 
   @include mq($until: tablet) {
     margin-bottom: $inuit-global-spacing-unit

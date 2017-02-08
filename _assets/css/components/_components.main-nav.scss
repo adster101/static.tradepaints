@@ -1,26 +1,28 @@
 .main-nav {
-
-  display:none;
-
-  @include mq($from: tablet) {
     display:flex;
     flex-shrink: 0;
-    height: 48px;
     width:100%;
     overflow-x: auto;
     overflow-y: hidden;
-  }
 }
 
 .main-nav__link {
-  display: flex;
-  color: $color-white;
+
+  @include inuit-font-size(12px, 1);
+  height:36px;
   padding:12px 12px 9px 12px;
   text-decoration:none;
-  opacity: 0.87;
-  height:48px;
   flex-shrink: 0;
+  display: flex;
+  color: $color-white;
+  opacity: 0.87;
   border-bottom: solid 3px transparent;
+
+  @include mq($from: tablet) {
+    height:48px;
+    @include inuit-font-size(16px);
+    padding:12px 12px 9px 12px;
+  }
 
   &:hover,
   &:active {

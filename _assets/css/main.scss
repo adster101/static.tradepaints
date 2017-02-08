@@ -1,6 +1,3 @@
----
-# This is the Front Matter block
----
 /* ==========================================================================
    INUITCSS
    ========================================================================== */
@@ -79,7 +76,7 @@
 
 // SETTINGS
 @import "settings/settings.config";
-@import "../bower_components/inuitcss/settings/settings.core";
+@import "../../bower_components/inuitcss/settings/settings.core";
 @import "settings/settings.global";
 @import "settings/settings.colors";
 
@@ -88,10 +85,10 @@
 
 
 // TOOLS
-@import "../bower_components/inuitcss/tools/tools.rem";
-@import "../bower_components/inuitcss/tools/tools.font-size";
-@import "../bower_components/inuitcss/tools/tools.clearfix";
-@import "../bower_components/inuitcss/tools/tools.hidden";
+@import "../../bower_components/inuitcss/tools/tools.rem";
+@import "../../bower_components/inuitcss/tools/tools.font-size";
+@import "../../bower_components/inuitcss/tools/tools.clearfix";
+@import "../../bower_components/inuitcss/tools/tools.hidden";
 
 $mq-breakpoints: (
     mobile:  320px,
@@ -99,32 +96,32 @@ $mq-breakpoints: (
     desktop: 980px,
     wide:    1300px
 ) !default;
-@import "../bower_components/sass-mq/mq";
+@import "../../bower_components/sass-mq/mq";
 
 
 
 
 
 // GENERIC
-@import "../bower_components/inuitcss/generic/generic.box-sizing";
-@import "../bower_components/inuitcss/generic/generic.normalize";
-@import "../bower_components/inuitcss/generic/generic.reset";
-@import "../bower_components/inuitcss/generic/generic.shared";
+@import "../../bower_components/inuitcss/generic/generic.box-sizing";
+@import "../../bower_components/inuitcss/generic/generic.normalize";
+@import "../../bower_components/inuitcss/generic/generic.reset";
+@import "../../bower_components/inuitcss/generic/generic.shared";
 
 
 
 
 
 // ELEMENTS
-@import "../bower_components/inuitcss/elements/elements.page";
+@import "../../bower_components/inuitcss/elements/elements.page";
 @import "elements/_elements.body";
 @import "elements/_elements.header";
 @import "elements/_elements.footer";
 @import "elements/_elements.a";
 @import "elements/_elements.headings";
-@import "../bower_components/inuitcss/elements/elements.headings";
-@import "../bower_components/inuitcss/elements/elements.images";
-@import "../bower_components/inuitcss/elements/elements.tables";
+@import "../../bower_components/inuitcss/elements/elements.headings";
+@import "../../bower_components/inuitcss/elements/elements.images";
+@import "../../bower_components/inuitcss/elements/elements.tables";
 
 
 
@@ -133,27 +130,23 @@ $mq-breakpoints: (
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
-@import "../bower_components/inuitcss/objects/objects.wrapper";
-@import "../bower_components/inuitcss/objects/objects.layout";
-@import "../bower_components/inuitcss/objects/objects.media";
-@import "../bower_components/inuitcss/objects/objects.flag";
-@import "../bower_components/inuitcss/objects/objects.list-bare";
-@import "../bower_components/inuitcss/objects/objects.list-inline";
-@import "../bower_components/inuitcss/objects/objects.box";
-@import "../bower_components/inuitcss/objects/objects.block";
-@import "../bower_components/inuitcss/objects/objects.ratio";
-@import "../bower_components/inuitcss/objects/objects.crop";
-@import "../bower_components/inuitcss/objects/objects.tables";
-@import "../bower_components/inuitcss/objects/objects.pack";
+@import "../../bower_components/inuitcss/objects/objects.wrapper";
+@import "../../bower_components/inuitcss/objects/objects.layout";
+@import "../../bower_components/inuitcss/objects/objects.media";
+@import "../../bower_components/inuitcss/objects/objects.flag";
+@import "../../bower_components/inuitcss/objects/objects.list-bare";
+$inuit-list-inline-delimiter:   " | " !default;
+
+@import "../../bower_components/inuitcss/objects/objects.list-inline";
+@import "../../bower_components/inuitcss/objects/objects.box";
+@import "../../bower_components/inuitcss/objects/objects.block";
+@import "../../bower_components/inuitcss/objects/objects.ratio";
+@import "../../bower_components/inuitcss/objects/objects.crop";
+@import "../../bower_components/inuitcss/objects/objects.tables";
+@import "../../bower_components/inuitcss/objects/objects.pack";
 
 @import "objects/_objects.block";
 
-@import "components/_components.logo";
-@import "components/_components.utility-nav";
-@import "components/_components.main-nav";
-@import "components/_components.icons";
-@import "components/_components.trending";
-@import "components/_components.buttons";
 
 
 
@@ -161,21 +154,28 @@ $mq-breakpoints: (
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-@import "../bower_components/inuitcss/components/example.components.buttons";
-
+@import "components/_components.logo";
+@import "components/_components.utility-nav";
+@import "components/_components.main-nav";
+@import "components/_components.icons";
+@import "components/_components.trending";
+@import "components/_components.buttons";
+@import "components/_components.search";
+@import "components/_components.usps";
+@import "components/_components.newsletter";
 
 
 
 
 // UTILITIES
-@import "../bower_components/inuitcss/utilities/utilities.clearfix";
+@import "../../bower_components/inuitcss/utilities/utilities.clearfix";
 
 $inuit-offsets: true;
-@import "../bower_components/inuitcss/utilities/utilities.widths";
-@import "../bower_components/inuitcss/utilities/utilities.headings";
-@import "../bower_components/inuitcss/utilities/utilities.spacing";
-@import "../bower_components/inuitcss/utilities/utilities.print";
-@import "../bower_components/inuitcss/utilities/utilities.hide";
+@import "../../bower_components/inuitcss/utilities/utilities.widths";
+@import "../../bower_components/inuitcss/utilities/utilities.headings";
+@import "../../bower_components/inuitcss/utilities/utilities.spacing";
+@import "../../bower_components/inuitcss/utilities/utilities.print";
+@import "../../bower_components/inuitcss/utilities/utilities.hide";
 
 @import "utilities/_utilities.alignment";
 @import "utilities/_utilities.backgrounds"

@@ -1,0 +1,62 @@
+.c-usps {
+  box-shadow: 0 4px 6px -2px rgba(0,0,0,.2);
+  border: 1px solid $color-gray-ui;
+  margin-bottom: $inuit-global-spacing-unit;
+  background: $color-white;
+
+  padding-top: $inuit-global-spacing-unit-small;
+  padding-bottom: $inuit-global-spacing-unit-small;
+  padding-left: $inuit-global-spacing-unit-small;
+  padding-right: $inuit-global-spacing-unit-small;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+
+  svg {
+    fill: $color-brand;
+  }
+}
+
+.c-usps__item {
+
+  padding-bottom: $inuit-global-spacing-unit-small;
+  padding-left: $inuit-global-spacing-unit-large;
+  padding-right: $inuit-global-spacing-unit-large;
+  // color: $color-gray;
+
+  @include mq($from: tablet) {
+    display:flex;
+    justify-content: center;
+    flex: 33%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: $inuit-global-spacing-unit-tiny;
+    padding-right: $inuit-global-spacing-unit-tiny;
+  }
+}
+
+.c-usps__item + .c-usps__item {
+
+  padding-top: $inuit-global-spacing-unit-small;
+  border-top: 1px solid $color-gray-ui;
+
+  @include mq($from: tablet) {
+    border-left: 1px solid $color-gray-ui;
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
+.c-usps__content {
+
+  @include inuit-font-size(12px, 1);
+
+  @include mq($from: tablet) {
+    @include inuit-font-size(16px,1);
+  }
+}

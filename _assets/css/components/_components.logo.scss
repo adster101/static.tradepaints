@@ -1,6 +1,6 @@
 .logo {
   @include mq($from: tablet) {
-    flex-grow: 0;
+    flex-grow: 1;
   }
 }
 

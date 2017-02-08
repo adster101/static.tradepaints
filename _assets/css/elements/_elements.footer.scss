@@ -1,0 +1,32 @@
+footer {
+  h1,h2,h3,h4,h5,h6 {
+    color:$color-white;
+  }
+
+  color:$color-white;
+  background-color: $color-brand;
+  a {
+    color:$color-white;
+    opacity: 0.54;
+    text-decoration: none;
+    display:block;
+
+    &:hover {
+      opacity: 0.84;
+      color: $color-yellow;
+    }
+  }
+
+  nav {
+
+    @include mq($until: tablet) {
+      margin-bottom: $inuit-global-spacing-unit-large;
+    }
+
+  }
+
+  .o-list-inline__item + .o-list-inline__item {
+    padding-left: $inuit-global-spacing-unit-small;
+    padding-right: $inuit-global-spacing-unit-small;
+  }
+}

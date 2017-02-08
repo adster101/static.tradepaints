@@ -2,12 +2,24 @@
 layout: default
 ---
 
-{% include trending.html %}
 
-<div class="o-layout">
-  <div class="o-layout__item ">
-    <p class="center">Bullets</p>
-  </div>
-</div>
+<section class="c-usps">
+  {% for usps in site.data.usps %}
+    <div class="c-usps__item">
+      <div class="o-media o-media--small">
+        <a class="o-media__img" href="#"><svg class="icon icon--large"><use xlink:href="#{{ usps.icon }}"></use></svg></a>
+        <div class="o-media__body left">
+          <div class="c-usps__content">
+            <strong>{{ usps.title }}</strong>
+            <br />
+            {{ usps.tagline }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+{% include trending.html %}
 
 {% include news-offers.html %}

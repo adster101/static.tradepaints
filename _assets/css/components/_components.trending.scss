@@ -87,20 +87,23 @@
   bottom:0;
   right: 0;
   left: 0;
-  background-color: rgba(1,1,1,0.6);
+  background-color: rgba(0,44,100,0.65);
   color: $color-white;
+  padding: $inuit-global-spacing-unit-tiny;
+  @include inuit-font-size(12px,1.2);
 
   > p {
     margin-bottom: 0;
   }
-  
-  @include inuit-font-size(12px);
 
-  @include mq(tablet) {
+
+  @include mq($from: tablet) {
     @include inuit-font-size(14px);
+    padding: $inuit-global-spacing-unit-small;
   }
 
-  @include mq(desktop) {
+  @include mq($from: desktop) {
+    padding: $inuit-global-spacing-unit;
     @include inuit-font-size(16px);
   }
 

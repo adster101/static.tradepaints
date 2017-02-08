@@ -33,41 +33,39 @@
       <a href="/" class="logo">
         <img class="logo__image" src="/css/images/logo.svg" alt="Trade Paint Limited logo" title="Go to homepage" />
       </a>
-      <form style="flex-grow: 1" class="u-padding-left-large utility-nav__link--hide-mobile">
-        <input class="u-4/5 u-padding-small" type="text" value="" placeholder="Search the site"/>
-        <button class="c-btn">
-          <svg class="icon">
+      <div class="search u-3/5">
+
+
+      <form class="search__form">
+        <button class="search__button ">
+          <svg height="24px" class="icon icon--large">
             <use xlink:href="#icon-search"></use>
           </svg>
-          <span class="">Search</span>
         </button>
-
+        <input class="search__input" type="text" value="" placeholder="Search the site"/>
 
       </form>
-      <a class="utility-nav__link utility-nav__link--hide-tablet-up" href="#">
-        <svg class="icon utility-nav__icon--large">
-          <use xlink:href="#icon-menu"></use>
-        </svg>
-        <span class="">Menu</span>
-      </a>
+      </div>
       <a class="utility-nav__link utility-nav__link--hide-tablet-up" href="#">
         <svg class="icon utility-nav__icon--large">
           <use xlink:href="#icon-search"></use>
-        </svg>
+        </svg><br />
         <span class="">Search</span>
       </a>
       <a class="utility-nav__link utility-nav__link--hide-tablet-up" href="#">
         <svg class="icon utility-nav__icon--large">
           <use xlink:href="#icon-location2"></use>
-        </svg>
+        </svg><br />
         <span class="">Branches</span>
       </a>
-      <a class="utility-nav__link utility-nav__link--trolley" href="#">
+      <a class="utility-nav__link" href="#">
         <svg class="icon utility-nav__icon--large">
           <use xlink:href="#icon-cart"></use>
-        </svg>
-        <span class="utility-nav__trolley-total">0</span>
-        <span class="">Trolley</span>
+        </svg><br />
+        <span class="utility-nav__link--trolley">
+          Trolley
+          <span class="utility-nav__trolley-total">0</span>
+      </span>
       </a>
     </div>
   </div>

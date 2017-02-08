@@ -5,9 +5,19 @@
 .icon {
   display: inline-block;
   fill: $color-white;
-  vertical-align: middle;
+  vertical-align: text-top;
   width: 16px;
   height: 16px;
+}
+
+.icon--large {
+  width: 18px;
+  height: 18px;
+
+  @include mq($from: tablet) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .utility-nav__icon {
@@ -21,10 +31,6 @@
 }
 
 .utility-nav__icon--large {
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 18px;
-  height: 18px;
-
+  width: 24px;
+  height: 24px;
 }

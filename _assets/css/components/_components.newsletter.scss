@@ -1,2 +1,59 @@
 .newsletter {
+  @include mq($from: tablet) {
+    display: flex;
+  }
+}
+
+.newsletter__item {
+  display:flex;
+  padding-top: $inuit-global-spacing-unit;
+  padding-bottom: $inuit-global-spacing-unit;
+  justify-content: center;
+}
+
+.newsletter__item--label {
+  flex-grow: 1;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    border-top: 48px solid transparent;
+    border-left: 24px solid $color-red;
+    border-bottom: 48px solid transparent;
+
+    @include mq($from: tablet) {
+      top: 0px;
+      right: -24px;
+      border-top: 48px solid transparent;
+      border-left: 24px solid $color-red;
+      border-bottom: 48px solid transparent;
+    }
+
+    display: flex;
+    width: 0;
+    height: 0;
+  }
+}
+
+.newsletter__item--input {
+  flex-grow: 2;
+}
+
+.newsletter__label {
+  color: $color-white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  .large {
+    @include inuit-font-size(18px);
+
+    @include mq($from: tablet) {
+      @include inuit-font-size(20px);
+    }
+
+    margin-bottom: 0;
+  }
+
+
 }

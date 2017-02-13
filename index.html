@@ -1,18 +1,16 @@
 ---
 layout: default
 ---
-
-
 <section class="c-usps">
   {% for usps in site.data.usps %}
     <div class="c-usps__item">
       <div class="o-media o-media--small">
-        <a class="o-media__img" href="#"><svg class="icon icon--large"><use xlink:href="#{{ usps.icon }}"></use></svg></a>
+        <a class="o-media__img" href="#"><svg class="icon"><use xlink:href="#{{ usps.icon }}"></use></svg></a>
         <div class="o-media__body left">
           <div class="c-usps__content">
-            <strong>{{ usps.title }}</strong>
-            <br />
-            {{ usps.tagline }}
+            <p class="u-margin-bottom-none">
+              <strong>{{ usps.title }}</strong>
+            </p>
           </div>
         </div>
       </div>

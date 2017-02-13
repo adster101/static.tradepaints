@@ -23,7 +23,6 @@
 }
 
 .c-usps__item {
-
   padding-bottom: $inuit-global-spacing-unit-small;
   padding-left: $inuit-global-spacing-unit-large;
   padding-right: $inuit-global-spacing-unit-large;
@@ -41,7 +40,6 @@
 }
 
 .c-usps__item + .c-usps__item {
-
   padding-top: $inuit-global-spacing-unit-small;
   border-top: 1px solid $color-gray-ui;
 
@@ -52,10 +50,12 @@
   }
 }
 
+.c-usps > div:last-of-type {
+  padding-bottom: 0;
+}
+
 .c-usps__content {
-
   @include inuit-font-size(12px, 1);
-
   @include mq($from: tablet) {
     @include inuit-font-size(16px,1);
   }

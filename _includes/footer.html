@@ -2,7 +2,7 @@
   <div class="o-wrapper u-padding-bottom">
     <div class="o-layout">
       {% for sections in site.data.footer %}
-        <div class="o-layout__item u-1/4@tablet u-1/4@desktop">
+        <div class="o-layout__item u-1/2@mobile u-1/4@tablet u-1/4@desktop">
           {% assign section = sections[1] %}
             <header>
               <h6 class="u-margin-bottom-small">
@@ -19,7 +19,7 @@
     </div>
   </div>
   <div class="dark-blue-bg">
-    <div class="o-wrapper">
+    <div class="o-wrapper u-padding-top-small u-padding-bottom-small">
       <ul class="o-list-inline u-margin-bottom-none">
         <li class="o-list-inline__item">
           <a href="/">&copy; 2017 {{ site.title }}</a>

@@ -1,19 +1,23 @@
 .main-nav {
-    display:flex;
-    flex-shrink: 0;
-    width:100%;
-    overflow-x: auto;
-    overflow-y: hidden;
+    display:inline-block;
+    white-space: nowrap;
+}
+
+.main-nav__link + .main-nav__link {
+  margin-left: $inuit-global-spacing-unit-small;
+
+  @include mq($from: tablet) {
+    margin-left: $inuit-global-spacing-unit;
+  }
 }
 
 .main-nav__link {
 
   @include inuit-font-size(12px, 1);
   height:36px;
-  padding:12px 12px 9px 12px;
+  padding:12px 0 9px 0;
   text-decoration:none;
-  flex-shrink: 0;
-  display: flex;
+  display: inline-block;;
   color: $color-white;
   opacity: 0.87;
   border-bottom: solid 3px transparent;
@@ -21,7 +25,6 @@
   @include mq($from: tablet) {
     height:48px;
     @include inuit-font-size(16px);
-    padding:12px 12px 9px 12px;
   }
 
   &:hover,
@@ -30,5 +33,54 @@
     text-decoration: none;
     color: $color-yellow;
     border-bottom: solid 3px $color-yellow;
+  }
+}
+
+/*
+ * Core styles for PriorityNav.js
+ * These styles are not optional and should always be included
+ *
+ * Free to use under the MIT License.
+ * http://twitter.com/GijsRoge
+ */
+
+.priority-nav{
+
+  white-space: nowrap; // prevent flash of unstyled content
+
+  /*
+    * Makes sure the menu's are inline-block so they don't take up
+    * the entire width of its parent. This will break the plugin.
+    */
+
+  &-has-dropdown{
+    .priority-nav{
+      &__dropdown{
+        &-toggle{
+          position: relative;
+        }
+      }
+    }
+  }
+  &__wrapper{
+    position: relative;
+  }
+  &__dropdown{
+    position: absolute;
+    display:none;
+
+    &.show{
+      visibility: visible;
+    }
+    &-toggle{
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+  &-is-visible{
+    visibility: visible;
+  }
+  &-is-hidden{
+    visibility: hidden;
   }
 }

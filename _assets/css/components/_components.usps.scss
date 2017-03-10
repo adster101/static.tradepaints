@@ -22,15 +22,22 @@
   }
 }
 
+.c-usps__link {
+  &:hover {
+    color: $color-blue-light;
+  }
+}
+
 .c-usps__item {
   padding-bottom: $inuit-global-spacing-unit-small;
   padding-left: $inuit-global-spacing-unit-large;
   padding-right: $inuit-global-spacing-unit-large;
   // color: $color-gray;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 
   @include mq($from: tablet) {
-    display:flex;
-    justify-content: center;
     flex: 33%;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -55,8 +62,16 @@
 }
 
 .c-usps__content {
+
+  padding-left: $inuit-global-spacing-unit-tiny;
   @include inuit-font-size(12px, 1);
+
   @include mq($from: tablet) {
-    @include inuit-font-size(16px,1);
+    @include inuit-font-size(14px,1);
   }
+
+  @include mq($from: desktop) {
+    @include inuit-font-size(16px);
+  }
+
 }

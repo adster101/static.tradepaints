@@ -20,14 +20,14 @@
           </svg>
           <span class="utility-nav__text">Branches</span>
         </a>
-        <a class="utility-nav__link" href="#">
+        <!-- <a class="utility-nav__link" href="#">
           <svg class="icon">
             <use xlink:href="#icon-cart"></use>
           </svg>
           <span class="utility-nav__link--trolley">
             Trolley<span class="utility-nav__trolley-total">(0)</span>
         </span>
-        </a>
+        </a> -->
         <a class="utility-nav__link utility-nav__link--login" href="#">
           <svg class="icon utility-nav__icon">
             <use xlink:href="#icon-user"></use>
@@ -69,16 +69,20 @@
     </div>
   </div>
 
-  <nav class="light-blue-bg" id="main-menu">
-    <div class="o-wrapper main-nav">
-      {% assign pages = site.pages | sort:"order" %}
-      {% for my_page in pages %}
-      {% if my_page.title %}
-      <a class="{{ my_page.anchor-class }}" href="{{ my_page.url | prepend: site.baseurl }}">
-        {{ my_page.title | escape }}
-      </a>
-      {% endif %}
-      {% endfor %}
+  <nav class="light-blue-bg">
+    <div class="o-wrapper">
+      <div class="main-menu">
+        <div class="main-nav">
+          {% assign pages = site.pages | sort:"order" %}
+          {% for my_page in pages %}
+          {% if my_page.title %}
+            <a class="{{ my_page.anchor-class }}" href="{{ my_page.url | prepend: site.baseurl }}">
+              {{ my_page.title | escape }}
+            </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </nav>
 </header>

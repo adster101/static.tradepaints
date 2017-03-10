@@ -1,6 +1,6 @@
 
 
-define("branding-responsive-nav", [], function() {
+ var brandingresponsivenav = function() {
     var e = function(e) {
         this.setOptions(e)
     };

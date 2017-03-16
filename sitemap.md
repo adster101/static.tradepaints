@@ -1,54 +1,45 @@
 ---
 title: Sitemap
+layout: default
 ---
 
 - [Home](/)
   - [About Us](/about-us)
     - [Branches](/about-us/branches)
-    - [Delivery & Export](/about-us/delivery-and-export)
-    - [Returns](/about-us/returns-policy)
-    - [Site visits & Specification](/about-us/site-visits-and-specification)
-    - [Accounts](accounts)
-    - [Policies](/about-us/privacy-policy)
-    - [Terms and Conditions](/about-us/terms-and-conditions)
-    - [Cookie policy](/about-us/cookies)
-    - [Terms of website use](/about-us/terms-of-website-use)
+      - [Bexhill](/about-us/branches/bexhill)
+      - [St Leonards On Sea HQ](/about-us/branches/st-leonards-on-sea-hq)
+      - [Hailsham](/about-us/branches/hailsham)
+      - [Hove](/about-us/branches/hove)
+      - [Hastings](/about-us/branches/hastings)
+    - [Pricing](/about-us/pricing)
     - [Golf](/about-us/golf)
     - [Chalet](/about-us/chalet)
-  - [Contact Us](/contact-us)
   - [Products](/products)
-    - [Paints](/paints)
-    - [Woodcare](/woodcare)
-    - [Fillers & Finishes](/fillers-and-finishes)
-    - [Tools & Sundries](/tools-and-sundries)
-    - [Ladders & Towers](/ladders-and-towers)
-    - [Personal Protective Equipment (PPE)](/personal-protective-equipment-ppe)
-    - [Specialist Protective Coatings](/specialist-protective-coatings)
-    - [Wallcoverings](/wallcoverings)
-    - [Tiles & Tiling](/tiles-and-tiling)
-    - [Cleaning](/cleaning)
-  - [Pricing](/pricing)
+    - [Paints](/products/paints)
+    - [Woodcare](/products/woodcare)
+    - [Fillers & Finishes](/products/fillers-finishes)
+    - [Tools & Sundries](/products/tools-sundries)
+    - [Ladders & Towers](/products/ladders-towers)
+    - [Personal Protective Equipment (PPE)](/products/personal-protective-equipment-ppe)
+    - [Specialist Protective Coatings](/products/specialist-protective-coatings)
+    - [Wallcoverings](/products/wallcoverings)
+    - [Tiles & Tiling](/products/tiles-tiling)
+    - [Cleaning](/products/cleaning)
   - [Search](/search)
-  - [Checkout](/checkout)
-
-### Footer
-
-#### About
-- [About Us](/about-us)
-- [Branches](/about-us/branches)
-- [Delivery & Export](/about-us/delivery-and-export)
-- [Site visits & Specification](/about-us/site-visits-and-specification)
-
-#### Contact
-- [Contact Us](/contact-us)
-- Social links
-
-#### Guides and How to's
-- [Links](/resources/links)
-- [Glossary](/resources/glossary)
-
-#### Policies
-- [Policies](/about-us/privacy-policy)
-- [Terms and Conditions](/about-us/terms-and-conditions)
-- [Cookie policy](/about-us/cookies)
-- [Terms of website use](/about-us/terms-of-website-use)
+  - [Customer Services](/customer-services)
+    - [Accounts](/customer-services/accounts)
+    - [Delivery & Export](/customer-services/delivery-and-export)
+    - [Returns](/customer-services/returns-policy)
+    - [Site visits & Specification](/customer-services/site-visits)
+    - [Colour mixing](/customer-services/colour-mixing)
+  - [Contact Us](/contact-us)
+    - [Sales & General Enquiries](/contact/sales-general-inquiries)
+    - [Colour Card Request](/contact/colour-card-request)
+    - [Twitter](/)
+    - [Facebook](/)
+    - ...
+  - [Policies](/policies)
+    - [Privacy Policy](/policies/privacy)
+    - [Terms of website use](/policies/terms-of-website-use)
+    - [Terms and Conditions](/policies/terms-and-conditions)
+    - [Cookie policy](/policies/cookies)

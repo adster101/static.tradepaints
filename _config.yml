@@ -36,6 +36,8 @@ assets:
     browsers:
       - "last 2 versions"
       - "IE > 9"
+  compress:
+    css: true
 #theme: minima
 gems:
   - jekyll-feed

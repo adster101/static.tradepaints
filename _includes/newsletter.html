@@ -1,14 +1,37 @@
-<div class="newsletter">
-  <div class="newsletter__item newsletter__item--label red-bg">
-    <div class="newsletter__label">
-      <label>
-        <p class="large">Join our newsletter</p>
-        <p class="u-margin-bottom-none">Get news and offers</p>
-      </label>
+<section class="dark-blue-bg">
+    <div class="o-wrapper o-wrapper--small newsletter">
+        <!-- Begin MailChimp Signup Form -->
+        <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter__form" target="_blank">
+            <label for="mce-EMAIL" class="white u-margin-right-small">
+                        JOIN OUR MAILING LIST
+                        </label>
+            <div class="newsletter__input">
+                <input type="email" value="" name="EMAIL" class="newsletter__email" id="mce-EMAIL" placeholder="email address" required>
+                <button class="btn btn--small btn--primary">
+                          Sign up
+                        </button>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="" tabindex="-1" value=""></div>
+            </div>
+        </form>
+
+        <div class="newsletter__social white">
+            <span class="u-margin-bottom-none u-margin-right-small">
+                  FOLLOW US:
+                </span>
+
+            <a href="" class="vertically-center white u-margin-right-small">
+                <svg class="icon icon--twitter">
+                    <use xlink:href="#icon-twitter"></use>
+                  </svg>
+                <span class="">&nbsp;Twitter</span>
+            </a>
+            <a href="" class="vertically-center white">
+                <svg class="icon icon--facebook">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                <span class="">&nbsp;Facebook</span>
+            </a>
+        </div>
     </div>
-  </div>
-  <div class="newsletter__item newsletter__item--input dark-blue-bg">
-    <input class="u-4/5" type="text" />
-  </div>
-  </div>
-</div>
+</section>

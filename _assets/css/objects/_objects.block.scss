@@ -5,5 +5,26 @@
   @include mq($until: tablet) {
     margin-bottom: $inuit-global-spacing-unit
   }
+}
 
+.o-block--key-items {
+  position: relative;
+  //color: $color-white;
+  > .o-block__content {
+    background-color: white;
+    padding: $inuit-global-spacing-unit-tiny;
+
+
+
+    .title {
+      @include fluid-type(320px, 1200px, 14px, 20px)
+    }
+
+    @include mq($from: mobile-wide) {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+    }
+
+  }
 }

@@ -1,6 +1,8 @@
 .main-nav {
-    display:inline-block;
     white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .main-nav__link + .main-nav__link {
@@ -17,13 +19,12 @@
   height:36px;*/
   padding:12px 0 9px 0;
   text-decoration:none;
-  display: inline-block;;
+  display: inline-block;
   color: $color-white;
   opacity: 0.87;
   border-bottom: solid 3px transparent;
 
   @include mq($from: tablet) {
-    height:48px;
     @include inuit-font-size(16px);
   }
 
@@ -36,51 +37,8 @@
   }
 }
 
-/*
- * Core styles for PriorityNav.js
- * These styles are not optional and should always be included
- *
- * Free to use under the MIT License.
- * http://twitter.com/GijsRoge
- */
-
-.priority-nav{
-
-  white-space: nowrap; // prevent flash of unstyled content
-
-  /*
-    * Makes sure the menu's are inline-block so they don't take up
-    * the entire width of its parent. This will break the plugin.
-    */
-
-  &-has-dropdown{
-    .priority-nav{
-      &__dropdown{
-        &-toggle{
-          position: relative;
-        }
-      }
-    }
-  }
-  &__wrapper{
-    position: relative;
-  }
-  &__dropdown{
-    position: absolute;
-    display:none;
-
-    &.show{
-      visibility: visible;
-    }
-    &-toggle{
-      visibility: hidden;
-      position: absolute;
-    }
-  }
-  &-is-visible{
-    visibility: visible;
-  }
-  &-is-hidden{
-    visibility: hidden;
-  }
+.paints nav .paints, .wood nav .wood, .fillers nav .fillers, .tools nav .tools, .ladders nav .ladders, .tiles nav .tiles, .cleaning nav .cleaning, .ppe nav .ppe, .specialist nav .specialist, .wallcoverings nav .wallcoverings {
+  color: $color-yellow;
+  text-decoration: none;
+  border-bottom:3px solid $color-yellow;
 }

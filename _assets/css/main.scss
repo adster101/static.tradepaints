@@ -89,14 +89,15 @@
 @import "../../bower_components/inuitcss/tools/tools.font-size";
 @import "../../bower_components/inuitcss/tools/tools.clearfix";
 @import "../../bower_components/inuitcss/tools/tools.hidden";
-
+@import "tools/fluid-type";
 $mq-breakpoints: (
     mobile:  320px,
-    tablet-wide: 480px,
+    mobile-wide: 480px,
     tablet:  640px,
     desktop: 980px,
-    wide:    1300px
+    wide:    1200px
 ) !default;
+$mq-show-breakpoints: (mobile, mobile-wide, tablet, desktop) !default;
 @import "../../bower_components/sass-mq/mq";
 
 
@@ -136,7 +137,7 @@ $mq-breakpoints: (
 @import "../../bower_components/inuitcss/objects/objects.media";
 @import "../../bower_components/inuitcss/objects/objects.flag";
 @import "../../bower_components/inuitcss/objects/objects.list-bare";
-$inuit-list-inline-delimiter:   " | " !default;
+$inuit-list-inline-delimiter:   "\00A0/" !default;
 
 @import "../../bower_components/inuitcss/objects/objects.list-inline";
 @import "../../bower_components/inuitcss/objects/objects.box";
@@ -160,6 +161,7 @@ $inuit-list-inline-delimiter:   " | " !default;
 @import "components/_components.main-nav";
 @import "components/_components.icons";
 @import "components/_components.trending";
+$inuit-btn-namespace: '';
 @import "components/_components.buttons";
 @import "components/_components.search";
 @import "components/_components.usps";

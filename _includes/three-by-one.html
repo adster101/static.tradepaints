@@ -1,10 +1,14 @@
-<div class="o-layout u-margin-bottom">
+<div class="o-layout o-layout--small u-margin-bottom">
   {% for news in site.data.news-square %}
-    <div class="o-layout__item u-1/3@tablet  u-1/3@desktop">
-      <div class="o-block o-block--left o-block--news white-bg">
+    <div class="o-layout__item u-1/2@mobile u-1/3@tablet  u-1/3@desktop">
+      <div class="o-block o-block--flush o-block--key-items">
         <img class="o-block__img" src="{{ news.src }}" />
-        <div class="o-block__content u-padding">
-          <h4>{{ news.title }}</h4>
+        <div class="o-block__content">
+          <h6 class="title u-margin-bottom-none">
+            <a href="">
+              {{ news.title }}
+            </a>
+          </h6>
         </div>
       </div>
     </div>

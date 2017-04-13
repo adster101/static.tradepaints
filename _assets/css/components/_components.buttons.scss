@@ -1,170 +1,65 @@
-/* ==========================================================================
-   #BUTTONS
-   ========================================================================== */
+.btn {
+  display: inline-block;
+  padding: $inuit-global-spacing-unit $inuit-global-spacing-unit;
+  border: 0;
+  background-color: $color-brand;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 
-/**
- * This is an example component. Extend inuitcss by building your own components
- * that make up your UI. Component classes are prefixed with a `c-`.
- */
-
-/**
- * 1. Allow us to style box model properties.
- * 2. Line different sized buttons up a little nicer.
- * 3. Make buttons inherit font styles (often necessary when styling `input`s as
- *    buttons).
- * 4. Reset/normalize some styles.
- * 5. Force all button-styled elements to appear clickable.
- */
-
-.c-btn {
-  display: inline-block; /* [1] */
-  vertical-align: middle; /* [2] */
-  font: inherit; /* [3] */
-  text-align: center; /* [4] */
-  margin: 0; /* [4] */
-  cursor: pointer; /* [5] */
-  padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
-  transition: $global-transition;
-  border-radius: $global-radius;
-}
-
-
-
-
-
-/* Style variants
-   ========================================================================== */
-
-.c-btn--primary {
-  background-color: #4a8ec2;
-
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none; /* [4] */
+  &:hover {
+    background-color: tint($color-brand, 20%);
     color: #fff;
   }
 
-  &:hover,
   &:focus {
-    background-color: #3774a2;
+    background-color: shade($color-brand, 20%);
   }
 
+  .icon {
+    margin-right: 0.5em;
+  }
+
+  /* block button fills width of parent container */
+  &--block {
+    display: block;
+    width: 100%;
+
+    + .btn--block {
+      margin-top: 1rem;
+    }
+  }
 }
 
-.c-btn--secondary {
-  background-color: #2f4054;
+.btn--small {
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+}
 
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
+.btn--primary {
+  background-color: $color-red;
+
+  &:hover {
+    background-color: tint($color-red, 20%);
     color: #fff;
   }
 
-  &:hover,
   &:focus {
-    background-color: #1d2733;
+    background-color: shade($color-red, 20%);
   }
 
 }
+.btn--secondary {
+  background-color: $color-yellow;
 
-.c-btn--tertiary {
-  background-color: #fff;
-  color: #4a8ec2;
-
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
-    color: #4a8ec2;
-  }
-
-  &:hover,
-  &:focus {
-    color: #3774a2;
-  }
-
-}
-
-
-
-
-
-/* Size variants
-   ========================================================================== */
-
-.c-btn--small {
-  padding: inuit-rem($inuit-global-spacing-unit-tiny) inuit-rem($inuit-global-spacing-unit-small);
-}
-
-.c-btn--large {
-  padding: inuit-rem($inuit-global-spacing-unit) inuit-rem($inuit-global-spacing-unit-large);
-}
-
-
-
-
-
-/* Ghost buttons
-   ========================================================================== */
-
-/**
- * Ghost buttons have see-through backgrounds and are bordered.
- */
-
-$btn-ghost-border-width: 2px;
-
-.c-btn--ghost {
-  border: $btn-ghost-border-width solid currentColor;
-  padding: ($inuit-global-spacing-unit-small - $btn-ghost-border-width) ($inuit-global-spacing-unit - $btn-ghost-border-width);
-
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    background: none;
-  }
-
-  &.c-btn--small {
-    padding: ($inuit-global-spacing-unit-tiny - $btn-ghost-border-width) ($inuit-global-spacing-unit-small - $btn-ghost-border-width);
-  }
-
-  &.c-btn--large {
-    padding: ($inuit-global-spacing-unit - $btn-ghost-border-width) ($inuit-global-spacing-unit-large - $btn-ghost-border-width);
-  }
-
-  &.c-btn--primary {
-    color: #4a8ec2;
-
-    &:hover,
-    &:focus {
-      color: #3774a2;
-    }
-
-  }
-
-  &.c-btn--secondary {
-    color: #2f4054;
-
-    &:hover,
-    &:focus {
-      color: #1d2733;
-    }
-
-  }
-
-  &.c-btn--tertiary {
+  &:hover {
+    background-color: tint($color-yellow, 20%);
     color: #fff;
+  }
 
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
-
+  &:focus {
+    background-color: shade($color-yellow, 20%);
   }
 
 }

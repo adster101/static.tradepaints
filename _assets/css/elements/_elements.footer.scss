@@ -19,7 +19,7 @@ footer {
 
   nav {
 
-    @include mq($until: tablet) {
+    @include mq($until: desktop) {
       margin-bottom: $inuit-global-spacing-unit-large;
     }
 

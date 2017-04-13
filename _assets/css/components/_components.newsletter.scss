@@ -1,6 +1,30 @@
 .newsletter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding-top: $inuit-global-spacing-unit;
+  padding-bottom: $inuit-global-spacing-unit;
+
+  @include mq($from: desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.newsletter__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: $inuit-global-spacing-unit;
+
   @include mq($from: tablet) {
-    display: flex;
+    flex-direction: row;
+  }
+
+  @include mq($from: desktop) {
+    margin-bottom: 0;
   }
 }
 
@@ -11,49 +35,20 @@
   justify-content: center;
 }
 
-.newsletter__item--label {
-  flex-grow: 1;
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    border-top: 48px solid transparent;
-    border-left: 24px solid $color-red;
-    border-bottom: 48px solid transparent;
-
-    @include mq($from: tablet) {
-      top: 0px;
-      right: -24px;
-      border-top: 48px solid transparent;
-      border-left: 24px solid $color-red;
-      border-bottom: 48px solid transparent;
-    }
-
-    display: flex;
-    width: 0;
-    height: 0;
-  }
+.newsletter__email {
+  border: none;
+  outline: none;
+  padding: 9px 0 9px 12px;
+  color: rgba(255, 255, 255, 0.7);
+  color: #333;
 }
 
-.newsletter__item--input {
-  flex-grow: 2;
+.newsletter__input {
+  display: flex;
 }
 
-.newsletter__label {
-  color: $color-white;
-  font-weight: bold;
-  text-transform: uppercase;
-
-  .large {
-    @include inuit-font-size(18px);
-
-    @include mq($from: tablet) {
-      @include inuit-font-size(20px);
-    }
-
-    margin-bottom: 0;
-  }
-
-
+.newsletter__social {
+  display: flex;
+  padding-top: $inuit-global-spacing-unit-tiny;
+  padding-bottom: $inuit-global-spacing-unit-tiny;
 }

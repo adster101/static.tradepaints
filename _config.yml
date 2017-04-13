@@ -38,6 +38,7 @@ assets:
       - "IE > 9"
   compress:
     css: true
+    javascript: true
 #theme: minima
 gems:
   - jekyll-feed

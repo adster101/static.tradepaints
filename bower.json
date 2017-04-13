@@ -1,0 +1,22 @@
+{
+  "name": "tp",
+  "description": "tp bower/grunt gubbins",
+  "main": "",
+  "authors": [
+    "Adam Rifat <adam@littledonkey.net>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/adster101/static.tradepaints",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuitcss": "^6.0.0-beta.4",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}

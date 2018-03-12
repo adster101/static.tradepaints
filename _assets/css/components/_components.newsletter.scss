@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  
+
   padding-top: $inuit-global-spacing-unit;
   padding-bottom: $inuit-global-spacing-unit;
 
@@ -26,6 +26,10 @@
   @include mq($from: desktop) {
     margin-bottom: 0;
   }
+}
+
+.newsletter__form--align-left {
+  align-items: baseline;
 }
 
 .newsletter__item {

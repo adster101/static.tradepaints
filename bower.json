@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "inuitcss": "^6.0.0-beta.4",
-    "grunt-contrib-concat": "^1.0.1"
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "~0.14.0"
+
   }
 }

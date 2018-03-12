@@ -1,40 +1,25 @@
-<div class="slider js_slider">
-  <div class="frame js_frame">
-    <ul class="slides js_slides o-list-bare u-margin-bottom-none">
-      {% for hero in site.data.hero %}
-        <li class="js_slide">
+<div class="slider js_slider u-margin-bottom-large">
+    <div class="frame js_frame">
+        <ul class="slides js_slides">
+            {% for hero in site.data.hero %}
+            <li class="js_slide">
+                <a href="" class="slide">
+                    <div class="slide__caption u-2/5@mobile">
+                        <div class="slide__caption-inner">
+                            <h1 class="slide__caption-heading u-margin-bottom-none">
+                                {{ hero.title}}
+                            </h1>
+                            <h2 class="u-h6 slide__tagline u-gray u-margin-bottom-none">
+                              {{ hero.tagline }}
+                            </h2>
+                        </div>
+                    </div>
+                    <img class="slide__image u-3/5@mobile" src="{{ hero.image }}" />
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 
-          <div class="slide">
 
-          <div class="slide__caption u-2/5@mobile-wide">
-            <div class="slide__caption-inner">
-
-            <p class="slide__caption-heading">
-              {{ hero.title}}
-            </p>
-            <h2 class="u-h6">
-              {{ hero.tagline }}
-            </h2>
-            <a class="btn btn--small btn--secondary">Learn more ></a>
-          </div>
-        </div>
-
-          <div class="slide__image u-3/5@mobile-wide">
-            <a href="">
-              <img src="{{ hero.image }}" />
-            </a>
-          </div>
-        </div>
-
-        </li>
-      {% endfor %}
-    </ul>
-   <span class="slides__prev prev">
-               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#ffffff" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
-           </span>
-
-           <span class="slides__next next">
-               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#ffffff" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
-           </span>
-  </div>
 </div>

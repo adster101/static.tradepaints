@@ -1,8 +1,16 @@
 .c-usps {
+  background-color: white;
   box-shadow: 0 4px 6px -2px rgba(0,0,0,.2);
-  border: 1px solid $color-gray-ui;
-  margin-bottom: $inuit-global-spacing-unit;
-  background: $color-white;
+  border-bottom: 1px solid $color-gray-ui;
+  margin-bottom: $inuit-global-spacing-unit-small;
+
+  @include mq($from: tablet) {
+    margin-bottom: $inuit-global-spacing-unit;
+  }
+}
+
+.c-usps__container {
+
 
   padding-top: $inuit-global-spacing-unit-small;
   padding-bottom: $inuit-global-spacing-unit-small;
@@ -57,7 +65,7 @@
   }
 }
 
-.c-usps > div:last-of-type {
+.c-usps__container > div:last-of-type {
   padding-bottom: 0;
 }
 

@@ -1,8 +1,7 @@
 .main-nav {
     white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+    display: inline-block;
+    flex-grow: 1;
 }
 
 .main-nav__link + .main-nav__link {
@@ -23,10 +22,6 @@
   color: $color-white;
   opacity: 0.87;
   border-bottom: solid 3px transparent;
-
-  @include mq($from: tablet) {
-    @include inuit-font-size(16px);
-  }
 
   &:hover,
   &:active {

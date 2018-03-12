@@ -1,0 +1,68 @@
+/*
+ * Core styles for PriorityNav.js
+ * These styles are not optional and should always be included
+ *
+ * Free to use under the MIT License.
+ * http://twitter.com/GijsRoge
+ */
+
+.priority-nav{
+
+  white-space: nowrap; // prevent flash of unstyled content
+  display: flex;
+  align-items: center;
+
+  &-has-dropdown{
+    .priority-nav{
+      &__dropdown{
+
+        &-toggle{
+          position: relative;
+          background-color: trasparent;
+        }
+      }
+    }
+  }
+  &__wrapper{
+    position: relative;
+    margin-left: $inuit-global-spacing-unit-small;
+    @include mq($from: tablet) {
+      margin-left: $inuit-global-spacing-unit;
+    }
+  }
+  &__dropdown{
+    position: absolute;
+    visibility: hidden;
+    margin: 0;
+    background: $color-blue-dark;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    padding: $inuit-global-spacing-unit-small;
+    .main-nav__link + .main-nav__link {
+      margin: 0;
+    }
+    &.show{
+      visibility: visible;
+    }
+    &-toggle {
+      color: $color-white;
+      opacity: 0.87;
+      visibility: hidden;
+      position: absolute;
+      background: none;
+      border: none;
+      padding: 12px 24px 9px 0;
+      &:after {
+        content:" \25BE";
+        color: $color-white;
+      }
+    }
+  }
+  &-is-visible{
+    visibility: visible;
+  }
+  &-is-hidden{
+    visibility: hidden;
+  }
+}

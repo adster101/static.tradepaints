@@ -1,15 +1,10 @@
-.logo {
-  flex-grow: 1;
-  @include mq($from: tablet) {
-  }
-}
-
 .logo__image {
 
-  height: 48px;
+  height: 36px;
 
-  @include mq($from: desktop) {
-    height: 72px;
+  @include mq($from: mobile-wide) {
+    height: 48px;
+
   }
 
 }

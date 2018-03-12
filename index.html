@@ -1,24 +1,7 @@
 ---
 layout: default
 ---
-<section class="c-usps">
-  {% for usps in site.data.usps %}
-    <div class="c-usps__item">
-      <svg class="icon">
-        <use xlink:href="#{{ usps.icon }}"></use>
-      </svg>
-      <div class="c-usps__content">
-        <p class="u-margin-bottom-none">
-          <a class="c-usps__link" title="Learn more" href="#">
-            <strong>{{ usps.title }}</strong>
-          </a>
-        </p>
-      </div>
-    </div>
-  {% endfor %}
-</section>
 
-{% include trending.html %}
 
 {% include three-by-one.html %}
 

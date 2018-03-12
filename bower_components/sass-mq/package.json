@@ -1,7 +1,7 @@
 {
   "name": "sass-mq",
   "description": "mq() is a Sass mixin that helps manipulating media queries in an elegant way.",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "keywords": [
     "responsive",
     "sass",
@@ -49,14 +49,14 @@
   "license": "MIT",
   "homepage": "http://sass-mq.github.io/sass-mq/",
   "eyeglass": {
-    "needs": "^0.8.2",
+    "needs": ">= 0.8.2",
     "sassDir": "./_mq.scss",
     "exports": false
   },
   "devDependencies": {
-    "dart-sass": "^1.0.0-alpha.2",
-    "eyeglass": "^1.1.2",
-    "node-sass": "^3.10.1",
+    "dart-sass": "^1.0.0-alpha.6",
+    "eyeglass": "^1.2.1",
+    "node-sass": "^4.1.1",
     "sassdoc": "^2.1.20"
   }
 }

@@ -1,56 +1,79 @@
 .search {
-
   flex-grow: 1;
-  display:none;
-  height: 48px;
-  padding-left: $inuit-global-spacing-unit;
-
-  @include mq($from: tablet) {
-    display: block;
-  }
-
+    display: none;
+    height: 48px;
+    padding-left: $inuit-global-spacing-unit;
+    @include mq($from: tablet) {
+        display: block;
+    }
 }
 
 .search__form {
-  background: rgba(255,255,255,0.16);
-  border: 1px solid rgba(0,0,0,0);
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  max-width: 720px;
-  position: relative;
-  transition: background 100ms ease-in,width 100ms ease-out;
+    background: rgba(255,255,255,0.16);
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    transition: background 100ms ease-in,width 100ms ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.search__form--active {
+    background: rgba(255,255,255,1);
+
+    .search__input {
+        &::-webkit-input-placeholder {
+            color: rgba(0,0,0,0.54);
+        }
+    }
+
+    .search__button {
+        color: rgba(0,0,0,0.54);
+    }
 }
 
 .search__input {
-  border: none;
-  font: normal 16px Roboto,sans-serif;
-  height: 46px;
-  outline: none;
-  padding: 11px 0 11px 16px;
-  background: transparent;
-  color: rgba(255,255,255,0.7);
-  width: 80%;
+    border: none;
+    height: 48px;
+    outline: none;
+    padding: 12px 0 12px 24px;
+    background: transparent;
+    color: rgba(255,255,255,0.7);
+    flex-grow: 1;
+    color: $inuit-base-text-color;
 
-  color: $inuit-base-text-color;
-
-  &:focus {
-  }
+    &::-webkit-input-placeholder {
+        color: rgba(255,255,255,0.7);
+    }
 }
 
 .search__button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 0 4px;
-  line-height: 0;
-  float: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0 4px;
+    line-height: 0;
+    float: left;
+    color: rgba(255,255,255,0.7);
 
-  svg {
-    margin:12px;
-    opacity: 0.54;
-    fill: inherit;
-  }
+    svg {
+        margin: 12px;
+        opacity: 0.7;
+        fill: currentColor;
+    }
+}
 
 
+.search__results {
+    border-top: 1px solid $color-gray-light;
+}
+
+.search__results li:nth-child(odd) {
+    background: $inuit-base-background-color;
+}
+
+.search__result {
+    padding: $inuit-global-spacing-unit;
+    border-bottom: 1px solid $color-gray-light;
 }

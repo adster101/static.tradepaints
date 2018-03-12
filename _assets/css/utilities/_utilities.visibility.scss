@@ -1,0 +1,15 @@
+//
+//  1. .hidden-mobile - hides content until mobile-wide breakpoint
+//
+
+.hidden-mobile {
+  @include mq($until: mobile-wide) {
+    display: none !important;
+  }
+}
+
+.hide-tablet-and-up {
+  @include mq($from: tablet) {
+    display: none !important;
+  }
+}

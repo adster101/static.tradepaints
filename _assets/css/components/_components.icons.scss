@@ -1,6 +1,6 @@
 /*
  * Pretty icons
- * 1. Parent item needs to be position: relative for this to work
+ * 1. Make the icons larger on mobile
  */
 .icon {
   display: inline-block;
@@ -21,10 +21,11 @@
 }
 
 .utility-nav__icon {
-  width: 12px;
-  height: 12px;
 
-  @include mq($from: tablet) {
+  width: 36px; /* 1. */
+  height: 36px;
+
+  @include mq($from: mobile-wide) {
     width: 16px;
     height: 16px;
   }

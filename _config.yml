@@ -37,7 +37,7 @@ assets:
       - "last 2 versions"
       - "IE > 9"
   compress:
-    css: true
+    css: false
     javascript: true
 #theme: minima
 gems:
@@ -47,6 +47,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - bower_components
+  - node_modules
 compress_html:
   clippings: all
   comments: []

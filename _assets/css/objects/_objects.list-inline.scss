@@ -1,0 +1,7 @@
+
+.pagination {
+  .o-list-inline__item + .o-list-inline__item {
+    padding-left: $inuit-global-spacing-unit-tiny;
+    padding-right: $inuit-global-spacing-unit-tiny;
+  }
+}

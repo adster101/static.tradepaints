@@ -1,110 +1,47 @@
-.trending {
-
-  @include mq(desktop)
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    height: 358px;
-  }
-
-  @include mq($until: tablet) {
-    display: none;
-  }
-}
-.trending__item {
-  @include inuit-font-size(10px);
-  display: block;
-  border-left: 10px solid;
-  border-color: $color-gray-light;
-  background: $color-white;
-  color: $color-gray-light;
-  position: relative;
-  &:hover:before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    top: 35%;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid $color-brand;
-  }
-  &:hover {
-    color: $color-brand;
-    border-color: $color-brand;
-  }
-  @include mq(tablet) {
-    @include inuit-font-size(12px,1.5);
-    padding: $inuit-global-spacing-unit;
-    margin-bottom: $inuit-global-spacing-unit;
-  }
-  @include mq(desktop) {
-     @include inuit-font-size(16px);
-    padding: $inuit-global-spacing-unit;
-    // margin-bottom: $inuit-global-spacing-unit--small;
-    margin-bottom: 0;
-  }
-}
-.trending__item--active {
-  color: $color-brand;
-  border-color: $color-brand;
-  &:before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    top: 35%;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid $color-brand;
-  }
-}
+/**
+        * (optional) define here the style definitions which should be applied on the slider container
+        * e.g. width including further controls like arrows etc.
+        */
 .slider {
-  margin-bottom: 24px;
-  background: $color-white;
-  border: 1px solid $color-gray-ui;
-}
- .frame {
-   position: relative;
+    position: relative;
+    background: $color-white;
+    border: 1px solid $color-gray-ui;
 
-   overflow: hidden;
-   white-space: nowrap;
- }
+    margin-bottom: $inuit-global-spacing-unit-small;
 
-.slides, .js_slide {
-  display: inline-block;
+    @include mq($from: tablet) {
+      margin-bottom: $inuit-global-spacing-unit;
+    }
 }
 
-.slide {
-  display: flex;
-  flex-direction: column-reverse;
-  @include mq($from: mobile-wide) {
-    flex-direction: row;
-  }
-  white-space: normal;
-  width: 100%;
+.frame {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.slide__image {
-
+.frame li {
+    position: relative;
+    display: inline-block;
+    line-height: normal;
+    font-size: initial;
+    width: 100%;
 }
 
-.slide__caption {
-  padding: $inuit-global-spacing-unit-tiny;
-  @include mq($from: mobile-wide) {
-    padding: $inuit-global-spacing-unit-small;
-  }
+.slides {
+    display: block;
+    margin: 0;
 }
 
-.slide__caption-heading {
-  @include fluid-type(320px, 1200px, 14px, 36px);
-  line-height: 1;
+
+.frame p {
+  font-size: initial;
 }
 
-.slide__caption-inner {
-
-}
-.prev, .next {
+.next,
+.prev {
     position: absolute;
     top: 50%;
     margin-top: -25px;
@@ -120,6 +57,63 @@
     left: 0;
 }
 
-.next svg, .prev svg {
+.next svg,
+.prev svg {
     width: 25px;
+}
+
+.slide__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: normal;
+    width: 100%;
+}
+
+.slide__item--left {
+  flex-direction: row-reverse;
+}
+
+.slide__caption-inner {
+  padding: $inuit-global-spacing-unit-small;
+
+  @include mq($until: tablet) {
+    max-width: 50%;
+  }
+
+  @include mq($from: tablet) {
+    padding: $inuit-global-spacing-unit;
+  }
+  @include mq($from: desktop) {
+    padding: $inuit-global-spacing-unit-large;
+  }
+
+}
+
+.slide__image {
+
+  @include mq($until: tablet) {
+    max-width: 50%;
+  }
+
+}
+
+.slide__tagline {
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.slide__caption-heading {
+
+    @include fluid-type(320px, 1200px, 16px, 60px);
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: normal;
+}
+
+.slide__tagline {
+  @include fluid-type(320px, 1200px, 12px, 30px);
+  line-height: 1;
+
 }

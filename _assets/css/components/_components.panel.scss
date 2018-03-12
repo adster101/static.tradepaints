@@ -1,0 +1,40 @@
+/*
+ * Panel styles
+ * Simple panel style for content areas
+ * to include a white background and a small amount of padding
+ */
+.panel {
+  background-color: $color-white;
+  margin-bottom: $inuit-global-spacing-unit;
+
+  .panel__content {
+
+
+    padding: $inuit-global-spacing-unit-small;
+
+    // Increase padding for larger viewports
+    @include mq($from: tablet) {
+      padding: $inuit-global-spacing-unit;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .panel__title {
+    color: white;
+    background-color: $color-blue-dark;
+    margin-bottom: 0;
+    padding: $inuit-global-spacing-unit-small;
+
+    // Increase padding for larger viewports
+    @include mq($from: tablet) {
+      padding-right: $inuit-global-spacing-unit;
+      padding-left: $inuit-global-spacing-unit;
+      padding-top: $inuit-global-spacing-unit-small;
+      padding-bottom: $inuit-global-spacing-unit-small;
+    }
+  }
+
+}

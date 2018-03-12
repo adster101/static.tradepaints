@@ -1,0 +1,16 @@
+.o-layout {
+  margin-left: -12px;
+
+  @include mq($from: tablet) {
+    margin-left: -$inuit-global-spacing-unit;
+  }
+
+  > .o-layout__item {
+    padding-left: 12px;
+
+    @include mq($from: tablet) {
+      padding-left: $inuit-global-spacing-unit;
+    }
+  }
+
+}

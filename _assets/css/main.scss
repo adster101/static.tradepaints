@@ -93,11 +93,11 @@
 $mq-breakpoints: (
     mobile:  320px,
     mobile-wide: 480px,
-    tablet:  640px,
+    tablet:  720px,
     desktop: 980px,
-    wide:    1200px
+    wide:    1440px
 ) !default;
-$mq-show-breakpoints: (mobile, mobile-wide, tablet, desktop) !default;
+// $mq-show-breakpoints: (mobile, mobile-wide, tablet, desktop) !default;
 @import "../../bower_components/sass-mq/mq";
 
 
@@ -121,6 +121,7 @@ $mq-show-breakpoints: (mobile, mobile-wide, tablet, desktop) !default;
 @import "elements/_elements.footer";
 @import "elements/_elements.a";
 @import "elements/_elements.headings";
+@import "elements/_elements.hr";
 @import "../../bower_components/inuitcss/elements/elements.headings";
 @import "../../bower_components/inuitcss/elements/elements.images";
 @import "../../bower_components/inuitcss/elements/elements.tables";
@@ -132,22 +133,25 @@ $mq-show-breakpoints: (mobile, mobile-wide, tablet, desktop) !default;
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
+$inuit-wrapper-width: 960px !default;
+
 @import "../../bower_components/inuitcss/objects/objects.wrapper";
 @import "../../bower_components/inuitcss/objects/objects.layout";
 @import "../../bower_components/inuitcss/objects/objects.media";
-@import "../../bower_components/inuitcss/objects/objects.flag";
 @import "../../bower_components/inuitcss/objects/objects.list-bare";
+
 $inuit-list-inline-delimiter:   "\00A0/" !default;
 
 @import "../../bower_components/inuitcss/objects/objects.list-inline";
-@import "../../bower_components/inuitcss/objects/objects.box";
+
+
 @import "../../bower_components/inuitcss/objects/objects.block";
 @import "../../bower_components/inuitcss/objects/objects.ratio";
-@import "../../bower_components/inuitcss/objects/objects.crop";
 @import "../../bower_components/inuitcss/objects/objects.tables";
-@import "../../bower_components/inuitcss/objects/objects.pack";
 
 @import "objects/_objects.block";
+@import "objects/_objects.layout";
+@import "objects/_objects.list-inline";
 
 
 
@@ -157,8 +161,10 @@ $inuit-list-inline-delimiter:   "\00A0/" !default;
 //
 // Build and include your project’s UI Compoments here.
 @import "components/_components.logo";
+@import "components/_components.form";
 @import "components/_components.utility-nav";
 @import "components/_components.main-nav";
+@import "components/_components.priority-nav";
 @import "components/_components.icons";
 @import "components/_components.trending";
 $inuit-btn-namespace: '';
@@ -166,6 +172,7 @@ $inuit-btn-namespace: '';
 @import "components/_components.search";
 @import "components/_components.usps";
 @import "components/_components.newsletter";
+@import "components/_components.panel";
 
 
 
@@ -173,7 +180,6 @@ $inuit-btn-namespace: '';
 // UTILITIES
 @import "../../bower_components/inuitcss/utilities/utilities.clearfix";
 
-$inuit-offsets: true;
 @import "../../bower_components/inuitcss/utilities/utilities.widths";
 @import "../../bower_components/inuitcss/utilities/utilities.headings";
 @import "../../bower_components/inuitcss/utilities/utilities.spacing";
@@ -181,4 +187,5 @@ $inuit-offsets: true;
 @import "../../bower_components/inuitcss/utilities/utilities.hide";
 
 @import "utilities/_utilities.alignment";
-@import "utilities/_utilities.backgrounds"
+@import "utilities/_utilities.backgrounds";
+@import "utilities/_utilities.visibility";

@@ -1,16 +1,12 @@
-<div class="o-layout o-layout--small u-margin-bottom">
+<div class="o-layout u-margin-bottom">
   {% for news in site.data.news-square %}
-    <div class="o-layout__item u-1/2@mobile u-1/3@tablet  u-1/3@desktop">
-      <div class="o-block o-block--flush o-block--key-items">
-        <img class="o-block__img" src="{{ news.src }}" />
-        <div class="o-block__content">
-          <h6 class="title u-margin-bottom-none">
-            <a href="">
-              {{ news.title }}
-            </a>
-          </h6>
+    <div class="o-layout__item u-1/2@mobile u-1/3@tablet u-1/3@desktop">
+      <a href="" class="o-block o-block--flush o-block--key-items white-bg">
+        <img class="o-block__img" src="images/leyland50_intro.jpg" />
+        <div class="o-block__body">
+          <h5>{{ news.title }}</h5>
         </div>
-      </div>
+      </a>
     </div>
   {% endfor %}
 </div>
